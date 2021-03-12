@@ -1,5 +1,6 @@
 package cn.wuyi.payment.rpcimpl;
 
+import cn.wuyi.payment.rpc.IMchNotifyRpcService;
 import cn.wuyi.payment.service.impl.BaseNotify4MchPay;
 import com.alibaba.fastjson.JSONObject;
 import com.matrix.common.constant.PayConstant;
@@ -7,7 +8,6 @@ import com.matrix.common.domain.BaseParam;
 import com.matrix.common.enumm.RetEnum;
 import com.matrix.common.util.*;
 import com.matrix.dao.model.MchNotify;
-import com.matrix.rpc.IMchNotifyRpcService;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
@@ -19,7 +19,7 @@ import java.util.Map;
  * @version 1.0.0.1
  */
 @Service("mchNotifyRpcService")
-public class MchNotifyRpcServiceImpl extends BaseNotify4MchPay implements IMchNotifyRpcService{
+public class MchNotifyRpcServiceImpl extends BaseNotify4MchPay implements IMchNotifyRpcService {
     private static final MyLog myLog = MyLog.getLog(MchNotifyRpcServiceImpl.class);
 
 	/** @description: 插入商户通知

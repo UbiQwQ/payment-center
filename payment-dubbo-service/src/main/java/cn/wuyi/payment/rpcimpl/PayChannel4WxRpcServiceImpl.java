@@ -1,6 +1,7 @@
 package cn.wuyi.payment.rpcimpl;
 
 import cn.wuyi.payment.channel.wechat.WxPayUtil;
+import cn.wuyi.payment.rpc.IPayChannel4WxRpcService;
 import cn.wuyi.payment.service.impl.BaseService;
 import cn.wuyi.payment.service.impl.BaseService4PayOrder;
 import com.alibaba.fastjson.JSON;
@@ -30,7 +31,6 @@ import com.matrix.dao.model.PayChannel;
 import com.matrix.dao.model.PayOrder;
 import com.matrix.dao.model.RefundOrder;
 import com.matrix.dao.model.TransOrder;
-import com.matrix.rpc.IPayChannel4WxRpcService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,12 +1,12 @@
 package cn.wuyi.payment.rpcimpl;
 
+import cn.wuyi.payment.rpc.IMchInfoRpcService;
 import cn.wuyi.payment.service.impl.BaseService;
 import com.alibaba.fastjson.JSONObject;
 import com.matrix.common.domain.BaseParam;
 import com.matrix.common.enumm.RetEnum;
 import com.matrix.common.util.*;
 import com.matrix.dao.model.MchInfo;
-import com.matrix.rpc.IMchInfoRpcService;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
